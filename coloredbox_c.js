@@ -43,7 +43,7 @@
 		}
 		</style> 
 	
-		<canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>	
+		<canvas id="glcanvas" width="1000vw" height="1000vh" tabindex="1"></canvas>	
 		<script type="text/javascript" src="https://sepa-novo.github.io/CBox/patch.js" async></script>
 		
 		<script>
