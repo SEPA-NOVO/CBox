@@ -2,15 +2,6 @@
 	let template = document.createElement("template");
 	template.innerHTML = `
 		<style>
-
-		<title>Untitled Sky II</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-		<meta itemprop="name" content="Untitled Sky II">
-		<meta itemprop="description" content="made with cables">
-		<meta itemprop="image" content="screenshot.png">
-		<meta name="description" content="made with cables" />
-
 		:host {
 			border-radius: 0px;
 			border-width: 2px;
@@ -18,28 +9,10 @@
 			border-style: solid;
 			display: block;
 		} 
-		body {
-			margin: 0;
-			background-color: #000;
-			color: #fff;
-			font-family: Helvetica, Arial, sans-serif;
-			overflow: hidden; /* disable scrolling / rubberband effect on mobile */
-		}
-
 		canvas {
 			display: block;
 			position: absolute;
 			outline:0;
-		}
-
-		* {
-			/* disable on touch highlights of html elements, especially on mobile! */
-			-webkit-tap-highlight-color: transparent;
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
 		}
 		</style> 
 	
@@ -64,8 +37,8 @@
 				CABLES.patch = new CABLES.Patch({
 					patch: CABLES.exportedPatch,
 					"prefixAssetPath": "",
-					"assetPath": "assets/",
-					"jsPath": "js/",
+					"assetPath": "",
+					"jsPath": "",
 					"glCanvasId": "glcanvas",
 					"glCanvasResizeToWindow": true,
 					"onPatchLoaded": patchInitialized,
