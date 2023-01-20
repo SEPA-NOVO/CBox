@@ -1,0 +1,104 @@
+{
+	"id": "com.novo",
+	"version": "1.0.0",
+	"name": "Colored Border Box",
+	"description": "A colored boarder box",
+	"newInstancePrefix": "Colored boarder box",
+	"icon": "https://sepa-novo.github.io/JSLib/icon.png",
+	"vendor": "NOVO",
+	"eula": "",
+	"license": "",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-novo-coloredbox-b",
+			"url": "https://sepa-novo.github.io/JSLib/coloredbox_c.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-novo-coloredbox-b-styling",
+			"url": "https://sepa-novo.github.io/JSLib/coloredbox_styling_b.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "com-novo-coloredbox-b-builder",
+			"url": "https://sepa-novo.github.io/JSLib/coloredbox_builder_b.js",
+			"integrity": "",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"color": {
+			"type": "string",
+			"description": "Background color",
+			"default": "red"
+		},
+		"bordercolor": {
+			"type": "string",
+			"description": "Border color",
+			"default": "black"
+		},
+		"opacity": {
+			"type": "number",
+			"description": "Opacity",
+			"default": 1
+		},
+		"width": {
+			"type": "integer",
+			"default": 100
+		},
+		"height": {
+			"type": "integer",
+			"default": 100
+		}
+	},
+	"methods": {
+		"setColor": {
+
+			"description": "Sets the background color.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "The new background color"
+				}
+			],
+			"body": "this.color = newColor;"
+		},
+
+		"getColor": {
+			"returnType": "string",
+			"description": "Returns the background color.",
+			"body": "return this.color;"
+		},
+
+		"setBordercolor": {
+			"description": "Sets the border color.",
+			"parameters": [
+				{
+					"name": "newBordercolor",
+					"type": "string",
+					"description": "The new border color"
+				}
+			],
+			"body": "this.bordercolor = newBordercolor;"
+		},
+
+		"getBordercolor": {
+			"returnType": "string",
+			"description": "Returns the border color.",
+			"body": "return this.bordercolor;"
+		}
+	},
+	"events": {
+		"onClick": {
+			"description": "Called when the user clicks the Colored Box."
+		}
+	}
+}
+
+ 
